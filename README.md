@@ -133,7 +133,9 @@ Las marcas y los departamentos de los filtros, junto con sus contadores, se calc
 ## Cómo cambiar imágenes
 
 - **Producto:** coloca la imagen en `assets/images/products/` (cuadrada, unos 900×900 px, en JPG) y actualiza `image` del producto. Si es `null`, se muestra un placeholder rotulado "Imagen próximamente".
-- **Hero:** `assets/images/editorial/hero-cafetal.jpg` (desktop) y `hero-cafetal-mobile.jpg` (móvil), referenciadas en `index.html`.
+- **Hero:** la foto original de Stitch (1408 px) se reescaló ×4 con IA (Real-ESRGAN) y se exporta en varios tamaños y formatos:
+  `hero-cafetal-{1280,1920,2560,3840}.{avif,webp,jpg}` (desktop, hasta 4K) y `hero-cafetal-mobile-{640,960,1280}.{avif,webp,jpg}` (recorte vertical para móvil).
+  `index.html` los sirve con `<picture>` + `srcset`, de modo que cada pantalla descarga solo el tamaño que necesita (AVIF si el navegador lo soporta, luego WebP y por último JPEG). Para cambiar el hero, genera los mismos nombres y tamaños.
 - **Regiones y blog:** campos `image` en `js/data/content.js`.
 - **Logo:** `assets/logos/compro-cafe-colombia-fnc.png`. En el footer se muestra en blanco con un filtro CSS.
 

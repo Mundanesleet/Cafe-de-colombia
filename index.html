@@ -11,8 +11,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap">
-  <link rel="preload" as="image" href="assets/images/editorial/hero-cafetal.jpg" media="(min-width: 768px)">
-  <link rel="preload" as="image" href="assets/images/editorial/hero-cafetal-mobile.jpg" media="(max-width: 767px)">
+  <link rel="preload" as="image" type="image/avif" media="(min-width: 768px)" imagesizes="100vw"
+        imagesrcset="assets/images/editorial/hero-cafetal-1280.avif 1280w, assets/images/editorial/hero-cafetal-1920.avif 1920w, assets/images/editorial/hero-cafetal-2560.avif 2560w, assets/images/editorial/hero-cafetal-3840.avif 3840w">
+  <link rel="preload" as="image" type="image/avif" media="(max-width: 767px)" imagesizes="100vw"
+        imagesrcset="assets/images/editorial/hero-cafetal-mobile-640.avif 640w, assets/images/editorial/hero-cafetal-mobile-960.avif 960w, assets/images/editorial/hero-cafetal-mobile-1280.avif 1280w">
 
   <link rel="stylesheet" href="css/tokens.css">
   <link rel="stylesheet" href="css/base.css">
@@ -30,8 +32,20 @@
     <!-- ============================================================ HERO -->
     <section class="hero" id="top" aria-labelledby="hero-title">
       <picture class="hero__media">
-        <source media="(max-width: 767px)" srcset="assets/images/editorial/hero-cafetal-mobile.jpg">
-        <img src="assets/images/editorial/hero-cafetal.jpg" alt="Caficultores recolectando cerezas de café en las montañas de Colombia" width="1408" height="708" fetchpriority="high">
+        <!-- Real-ESRGAN x4 upscale of the Stitch photo, served per screen size and format -->
+        <source media="(max-width: 767px)" type="image/avif" sizes="100vw"
+                srcset="assets/images/editorial/hero-cafetal-mobile-640.avif 640w, assets/images/editorial/hero-cafetal-mobile-960.avif 960w, assets/images/editorial/hero-cafetal-mobile-1280.avif 1280w">
+        <source media="(max-width: 767px)" type="image/webp" sizes="100vw"
+                srcset="assets/images/editorial/hero-cafetal-mobile-640.webp 640w, assets/images/editorial/hero-cafetal-mobile-960.webp 960w, assets/images/editorial/hero-cafetal-mobile-1280.webp 1280w">
+        <source media="(max-width: 767px)" sizes="100vw"
+                srcset="assets/images/editorial/hero-cafetal-mobile-640.jpg 640w, assets/images/editorial/hero-cafetal-mobile-960.jpg 960w, assets/images/editorial/hero-cafetal-mobile-1280.jpg 1280w">
+        <source type="image/avif" sizes="100vw"
+                srcset="assets/images/editorial/hero-cafetal-1280.avif 1280w, assets/images/editorial/hero-cafetal-1920.avif 1920w, assets/images/editorial/hero-cafetal-2560.avif 2560w, assets/images/editorial/hero-cafetal-3840.avif 3840w">
+        <source type="image/webp" sizes="100vw"
+                srcset="assets/images/editorial/hero-cafetal-1280.webp 1280w, assets/images/editorial/hero-cafetal-1920.webp 1920w, assets/images/editorial/hero-cafetal-2560.webp 2560w, assets/images/editorial/hero-cafetal-3840.webp 3840w">
+        <img src="assets/images/editorial/hero-cafetal-1920.jpg" sizes="100vw"
+             srcset="assets/images/editorial/hero-cafetal-1280.jpg 1280w, assets/images/editorial/hero-cafetal-1920.jpg 1920w, assets/images/editorial/hero-cafetal-2560.jpg 2560w, assets/images/editorial/hero-cafetal-3840.jpg 3840w"
+             alt="Caficultores recolectando cerezas de café en las montañas de Colombia" width="3840" height="1931" fetchpriority="high" decoding="async">
       </picture>
       <div class="hero__overlay" aria-hidden="true"></div>
       <div class="container hero__content">
