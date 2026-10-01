@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Compro Café de Colombia · Marketplace de café 100% colombiano</title>
+  <meta name="description" content="Descubre cafés 100% colombianos de diferentes regiones, perfiles sensoriales y tostiones. Compra directa con respaldo de la Federación Nacional de Cafeteros.">
+  <meta name="theme-color" content="#2a1810">
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap">
+  <link rel="preload" as="image" href="assets/images/editorial/hero-cafetal.jpg" media="(min-width: 768px)">
+  <link rel="preload" as="image" href="assets/images/editorial/hero-cafetal-mobile.jpg" media="(max-width: 767px)">
+
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/sections.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <script src="js/core/boot.js"></script>
+</head>
+<body data-page="home" data-root=".">
+  <div data-component="header"></div>
+
+  <main id="main">
+    <!-- ============================================================ HERO -->
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <picture class="hero__media">
+        <source media="(max-width: 767px)" srcset="assets/images/editorial/hero-cafetal-mobile.jpg">
+        <img src="assets/images/editorial/hero-cafetal.jpg" alt="Caficultores recolectando cerezas de café en las montañas de Colombia" width="1408" height="708" fetchpriority="high">
+      </picture>
+      <div class="hero__overlay" aria-hidden="true"></div>
+      <div class="container hero__content">
+        <div class="hero__copy">
+          <p class="hero__badge">
+            <svg class="icon hero__badge-icon" aria-hidden="true"><use href="#i-verified"></use></svg>
+            <span>Denominación de Origen Protegida · FNC</span>
+          </p>
+          <h1 class="hero__title" id="hero-title">Café colombiano, desde su origen hasta tu taza.</h1>
+          <p class="hero__text">Descubre cafés 100% colombianos de diferentes regiones, perfiles sensoriales y tostiones artesanales certificados. Compra directa y fresca con respaldo de más de medio millón de familias caficultoras.</p>
+          <div class="hero__actions">
+            <a class="btn btn--light btn--lg" href="#catalogo">
+              <span>Explorar cafés</span>
+              <svg class="icon hero__cta-icon--desktop" aria-hidden="true"><use href="#i-arrow-downward"></use></svg>
+              <svg class="icon hero__cta-icon--mobile" aria-hidden="true"><use href="#i-chevron-right"></use></svg>
+            </a>
+            <a class="btn btn--glass btn--lg" href="#colombia-cafetera">
+              <span>Conoce Colombia Cafetera</span>
+              <svg class="icon hero__cta-icon--desktop" aria-hidden="true"><use href="#i-explore"></use></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <ul class="container trust-ribbon no-scrollbar" aria-label="Respaldo">
+        <li class="trust-item">
+          <span class="trust-item__icon"><svg class="icon" aria-hidden="true"><use href="#i-diversity-3"></use></svg></span>
+          <div>
+            <p class="trust-item__title">548.000+<span class="trust-item__title-extra"> Familias</span></p>
+            <p class="trust-item__text">Familias caficultoras en 22 departamentos</p>
+          </div>
+        </li>
+        <li class="trust-item">
+          <span class="trust-item__icon"><svg class="icon" aria-hidden="true"><use href="#i-workspace-premium"></use></svg></span>
+          <div>
+            <p class="trust-item__title">100% Arábigo</p>
+            <p class="trust-item__text">Lavado de taza limpia &amp; Certificado FNC</p>
+          </div>
+        </li>
+        <li class="trust-item">
+          <span class="trust-item__icon"><svg class="icon" aria-hidden="true"><use href="#i-local-shipping"></use></svg></span>
+          <div>
+            <p class="trust-item__title">Envíos Seguros</p>
+            <p class="trust-item__text">Despacho nacional desde CEDI Almacafé Soacha</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ======================================================== CAMPAIGN -->
+    <section class="campaign" aria-labelledby="campaign-title">
+      <div class="container">
+        <div class="campaign__card reveal">
+          <div class="campaign__copy">
+            <span class="tag tag--gold">Campaña Nacional</span>
+            <h2 class="t-headline-md campaign__title" id="campaign-title">Cada taza cuenta una historia.</h2>
+            <p class="t-body-md t-muted">Conoce a las mujeres y hombres detrás del café más suave del mundo. Compra sin intermediarios con respaldo institucional.</p>
+          </div>
+          <div class="campaign__aside">
+            <div class="campaign__guarantee">
+              <p class="t-label-sm t-outline">GARANTÍA DE ORIGEN</p>
+              <p class="campaign__guarantee-title">Trazabilidad Total</p>
+            </div>
+            <a class="btn btn--primary" href="#catalogo">Ver colección</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================== ENCUENTRA TU CAFÉ (finder) -->
+    <section class="section finder" id="encuentra-tu-cafe" aria-labelledby="finder-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">Guía Sensorial e Interactiva</p>
+          <h2 class="section-head__title" id="finder-title">Encuentra el café que va contigo</h2>
+          <p class="section-head__text">Filtra y explora según tu paladar, momento del día o método de preparación favorito.</p>
+        </header>
+        <div class="finder__track no-scrollbar" data-finder></div>
+      </div>
+    </section>
+
+    <!-- ========================================================= CATALOG -->
+    <section class="section section--alt catalog" id="catalogo" aria-labelledby="catalog-title">
+      <div class="container">
+        <header class="section-head section-head--split">
+          <div>
+            <p class="eyebrow">Catálogo Oficial FNC</p>
+            <h2 class="section-head__title section-head__title--primary" id="catalog-title">Descubre cafés 100% colombianos</h2>
+            <p class="section-head__text catalog__intro">Explora cafés de diferentes regiones, marcas de origen, perfiles y métodos de preparación.</p>
+          </div>
+          <p class="catalog__count" data-results-count aria-live="polite"></p>
+        </header>
+
+        <div class="catalog-toolbar">
+          <div class="catalog-toolbar__controls">
+            <button class="filter-trigger" type="button" aria-controls="filters-panel" aria-expanded="false" data-filters-open>
+              <svg class="icon" aria-hidden="true"><use href="#i-tune"></use></svg>
+              <span>Filtrar cafés</span>
+              <span class="filter-trigger__count" data-filters-count hidden></span>
+            </button>
+            <div class="sort-control">
+              <label class="sort-control__label" for="sort-select">Ordenar por:</label>
+              <div class="select">
+                <select id="sort-select" data-sort></select>
+                <svg class="icon select__chevron" aria-hidden="true"><use href="#i-expand-more"></use></svg>
+              </div>
+            </div>
+          </div>
+          <div class="catalog-toolbar__active">
+            <span class="catalog-toolbar__label">Filtros activos:</span>
+            <ul class="active-filters no-scrollbar" data-active-filters aria-label="Filtros activos"></ul>
+          </div>
+        </div>
+
+        <div class="catalog__layout">
+          <aside class="filters-panel" id="filters-panel" aria-labelledby="filters-title" data-filters-panel>
+            <div class="filters-panel__backdrop" data-close></div>
+            <form class="filters-panel__sheet" data-filters-form>
+              <div class="filters-panel__head">
+                <span class="filters-panel__handle" aria-hidden="true"></span>
+                <h3 class="filters-panel__title" id="filters-title">Filtros</h3>
+                <svg class="icon filters-panel__tune" aria-hidden="true"><use href="#i-tune"></use></svg>
+                <button class="icon-btn filters-panel__close" type="button" aria-label="Cerrar filtros" data-close>
+                  <svg class="icon" aria-hidden="true"><use href="#i-close"></use></svg>
+                </button>
+              </div>
+              <div class="filters-panel__body" data-filters-body></div>
+              <div class="filters-panel__actions">
+                <button class="btn btn--primary btn--block filters-panel__apply" type="submit" data-filters-apply>Aplicar filtros</button>
+                <button class="btn btn--soft btn--block filters-panel__reset" type="button" data-filters-reset>Limpiar filtros</button>
+              </div>
+            </form>
+          </aside>
+
+          <div class="catalog__results">
+            <div class="product-grid" data-product-grid aria-live="polite"></div>
+            <nav class="pagination" aria-label="Paginación del catálogo" data-pagination></nav>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================================== COLOMBIA CAFETERA -->
+    <section class="section regions" id="colombia-cafetera" aria-labelledby="regions-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow eyebrow--green">Geografía &amp; Microclimas</p>
+          <h2 class="section-head__title section-head__title--primary" id="regions-title">El café nace aquí</h2>
+          <p class="section-head__text">La geografía privilegiada, los microclimas de los tres ramales de los Andes y la dedicación campesina crean los perfiles más reconocidos del mundo.</p>
+        </header>
+        <div class="regions__layout reveal" data-regions></div>
+      </div>
+    </section>
+
+    <!-- =============================================== COLECCIÓN CAFETERA -->
+    <section class="section section--alt collection" id="coleccion-cafetera" aria-labelledby="collection-title">
+      <div class="container">
+        <div class="promo reveal">
+          <img class="promo__banner" src="assets/images/banners/banner-descuentos.jpg" alt="" width="1920" height="320" loading="lazy">
+          <div class="promo__content">
+            <span class="promo__tag">Descuentos &amp; Colección Exclusiva</span>
+            <h2 class="promo__title" id="collection-title">Descubre los descuentos que tenemos para ti.</h2>
+            <p class="promo__text">Microlotes selectos, kits para baristas y ediciones limitadas con descuentos directos otorgados por las marcas tostadoras autorizadas.</p>
+            <div class="promo__actions">
+              <a class="btn promo__cta" href="#catalogo" data-collection-cta>Haz clic y ahorra</a>
+              <span class="promo__note">Válido en cafés seleccionados despachados por Almacafé.</span>
+            </div>
+          </div>
+          <aside class="promo__card" aria-label="Kits de degustación">
+            <svg class="icon promo__card-icon" aria-hidden="true"><use href="#i-percent"></use></svg>
+            <p class="promo__card-title">Kits de Degustación</p>
+            <p class="promo__card-text">Prueba 3 regiones colombianas en un solo pedido con envío consolidado.</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================ HISTORIA DEL CAFÉ -->
+    <section class="section story" id="historia-del-cafe" aria-labelledby="story-title">
+      <div class="container">
+        <header class="section-head section-head--center reveal">
+          <p class="eyebrow">Respaldo Institucional</p>
+          <h2 class="section-head__title section-head__title--primary" id="story-title">El café detrás de cada taza</h2>
+          <blockquote class="story__quote">“Compro Café de Colombia conecta directamente a consumidores con marcas y familias productoras, garantizando comercio justo y trazabilidad en origen.”</blockquote>
+        </header>
+        <div class="pillars">
+          <article class="pillar reveal">
+            <span class="icon-tile icon-tile--green"><svg class="icon" aria-hidden="true"><use href="#i-pan-tool"></use></svg></span>
+            <div class="pillar__copy">
+              <h3 class="pillar__title">Tradición y Recolección Manual</h3>
+              <p class="pillar__text">Cada cereza se cosecha a mano en su punto óptimo de madurez en las laderas andinas, preservando la dulzura natural del café arábigo lavado.</p>
+            </div>
+            <p class="pillar__foot pillar__foot--green">Cero mecanización invasiva</p>
+          </article>
+          <article class="pillar reveal">
+            <span class="icon-tile icon-tile--neutral"><svg class="icon" aria-hidden="true"><use href="#i-verified-user"></use></svg></span>
+            <div class="pillar__copy">
+              <h3 class="pillar__title">Denominación de Origen 100% Protegida</h3>
+              <p class="pillar__text">Reconocida por la SIC y la Unión Europea. Solo cafés sometidos a rigurosos paneles de catación de taza limpia y acidez balanceada integran este catálogo.</p>
+            </div>
+            <p class="pillar__foot">Trazabilidad Almacafé</p>
+          </article>
+          <article class="pillar reveal">
+            <span class="icon-tile icon-tile--gold"><svg class="icon" aria-hidden="true"><use href="#i-volunteer-activism"></use></svg></span>
+            <div class="pillar__copy">
+              <h3 class="pillar__title">548.000 Familias Caficultoras</h3>
+              <p class="pillar__text">Tu compra respalda el Fondo Nacional del Café, garantizando bienes públicos como investigación en Cenicafé, asistencia técnica y compra segura.</p>
+            </div>
+            <p class="pillar__foot pillar__foot--gold">Impacto Social Directo</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================== CÓMO COMPRAR -->
+    <section class="section section--alt steps" id="como-comprar" aria-labelledby="steps-title">
+      <div class="container">
+        <header class="section-head section-head--center reveal">
+          <p class="eyebrow eyebrow--muted-mobile">Proceso Transparente</p>
+          <h2 class="section-head__title section-head__title--primary" id="steps-title">Cómo comprar tu café colombiano</h2>
+          <p class="section-head__text">Una experiencia directa y confiable respaldada por la logística de Almacafé.</p>
+        </header>
+        <ol class="steps__grid">
+          <li class="step reveal">
+            <span class="step__number" aria-hidden="true">1</span>
+            <span class="step__watermark" aria-hidden="true">01</span>
+            <h3 class="step__title"><span class="visually-hidden">Paso 1: </span>Explora</h3>
+            <p class="step__text">Navega por perfil de notas, tostión, municipio o departamento productor certificado.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step__number step__number--green" aria-hidden="true">2</span>
+            <span class="step__watermark" aria-hidden="true">02</span>
+            <h3 class="step__title"><span class="visually-hidden">Paso 2: </span>Elige</h3>
+            <p class="step__text">Selecciona grano entero para mayor frescura o molido según tu método de cafetera.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step__number" aria-hidden="true">3</span>
+            <span class="step__watermark" aria-hidden="true">03</span>
+            <h3 class="step__title"><span class="visually-hidden">Paso 3: </span>Compra</h3>
+            <p class="step__text">Pago 100% seguro a través de ePayco con tarjeta de crédito, débito o PSE bancario.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step__number step__number--green" aria-hidden="true">4</span>
+            <span class="step__watermark" aria-hidden="true">04</span>
+            <h3 class="step__title"><span class="visually-hidden">Paso 4: </span>Recibe</h3>
+            <p class="step__text">Alistado con protocolo de calidad en el CEDI Almacafé Soacha y llevado a tu puerta.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============================================================ BLOG -->
+    <section class="section blog" id="historias" aria-labelledby="blog-title">
+      <div class="container">
+        <header class="section-head section-head--split reveal">
+          <div>
+            <p class="eyebrow">Revista Digital &amp; Cultura</p>
+            <h2 class="section-head__title section-head__title--primary" id="blog-title">Historias del Café</h2>
+            <p class="section-head__text blog__intro">Aprende sobre catación, técnicas de extracción y los secretos de cada cordillera.</p>
+          </div>
+          <a class="link-arrow" href="pages/blog.html">
+            <span class="link-arrow__full">Ver todas las publicaciones</span><span class="link-arrow__short">Ver todo</span>
+            <svg class="icon" aria-hidden="true"><use href="#i-arrow-forward"></use></svg>
+          </a>
+        </header>
+        <div class="blog__grid" data-blog></div>
+      </div>
+    </section>
+  </main>
+
+  <div data-component="footer"></div>
+
+  <script src="js/core/config.js" defer></script>
+  <script src="js/core/utils.js" defer></script>
+  <script src="js/core/icons.js" defer></script>
+  <script src="js/data/products.js" defer></script>
+  <script src="js/data/content.js" defer></script>
+  <script src="js/services/product-service.js" defer></script>
+  <script src="js/services/search.js" defer></script>
+  <script src="js/services/filters.js" defer></script>
+  <script src="js/services/cart-service.js" defer></script>
+  <script src="js/components/ui.js" defer></script>
+  <script src="js/components/product-card.js" defer></script>
+  <script src="js/components/layout.js" defer></script>
+  <script src="js/components/cart-drawer.js" defer></script>
+  <script src="js/pages/home.js" defer></script>
+  <script src="js/app.js" defer></script>
+</body>
+</html>

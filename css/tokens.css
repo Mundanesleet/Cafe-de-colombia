@@ -1,0 +1,95 @@
+/* ==========================================================================
+   Design tokens — "Origen & Grano" (Stitch: Rediseño Compro Café Colombia)
+   Every color, type scale, radius and spacing value used by the site lives
+   here. Change a token and the whole interface follows.
+   ========================================================================== */
+
+:root {
+  /* ---- Color: brand ---- */
+  --color-primary: #050100;              /* Stitch "primary": solid buttons, prices */
+  --color-primary-container: #2a1810;    /* Dark espresso: hero, promo, footer */
+  --color-primary-deep: #1a0d08;         /* Mobile hero / footer foundation */
+  --color-primary-fixed: #fedbce;
+  --color-primary-fixed-dim: #e1c0b3;
+  --color-on-primary: #ffffff;
+
+  --color-secondary: #476558;            /* Cafeto green */
+  --color-secondary-container: #c9ead9;
+  --color-on-secondary-container: #4d6b5d;
+  --color-secondary-fixed-dim: #adcebe;
+  --color-secondary-tint: rgba(71, 101, 88, 0.1);
+  --color-cafeto: #2d4a3e;
+  --color-cafeto-light: #eaf1ed;
+
+  --color-tertiary-fixed: #ffddb1;       /* Toasted gold family */
+  --color-tertiary-fixed-dim: #f7bc63;
+  --color-on-tertiary-container: #ad7b28;
+  --color-on-tertiary-fixed: #291800;
+  --color-tertiary-container: #2a1900;
+
+  --color-accent: #8b261e;               /* Coffee cherry (mobile accents, logo red) */
+  --color-accent-strong: #701e18;
+  --color-accent-tint: rgba(139, 38, 30, 0.1);
+
+  /* ---- Color: surfaces ---- */
+  --color-surface: #fbf9f5;
+  --color-surface-lowest: #ffffff;
+  --color-surface-low: #f5f3ef;
+  --color-surface-container: #efeeea;
+  --color-surface-high: #eae8e4;
+  --color-sand: #f4ede2;
+  --color-on-surface: #1b1c1a;
+  --color-on-surface-variant: #4f4440;
+  --color-muted: #7d7065;
+  --color-outline: #817470;
+  --color-outline-variant: #d3c3be;
+  --color-line: #e5ded4;
+  --color-error: #ba1a1a;
+
+  /* ---- Contextual (re-assigned on mobile in responsive.css) ---- */
+  --eyebrow-color: var(--color-secondary);
+  --badge-count-bg: var(--color-primary);
+
+  /* ---- Typography ---- */
+  --font-serif: "Newsreader", Georgia, "Times New Roman", serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  /* ---- Radius (Stitch theme: ROUND_FOUR) ---- */
+  --radius-xs: 2px;
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 8px;
+  --radius-pill: 12px;
+  --radius-xl: 16px;
+  --radius-2xl: 24px;
+  --radius-round: 9999px;
+
+  /* ---- Spacing ---- */
+  --space-2xs: 0.25rem;  /* 4  */
+  --space-xs: 0.5rem;    /* 8  */
+  --space-sm: 0.75rem;   /* 12 */
+  --space-md: 1rem;      /* 16 */
+  --space-lg: 1.75rem;   /* 28 */
+  --space-xl: 3rem;      /* 48 */
+  --space-2xl: 6rem;     /* 96 */
+  --gutter: 1.5rem;
+  --container: 1440px;
+
+  /* ---- Elevation (warm espresso tinted) ---- */
+  --shadow-sm: 0 1px 2px rgba(42, 24, 16, 0.06);
+  --shadow-md: 0 6px 16px -4px rgba(42, 24, 16, 0.12), 0 2px 6px -1px rgba(42, 24, 16, 0.05);
+  --shadow-float: 0 12px 32px -8px rgba(42, 24, 16, 0.14), 0 2px 6px -1px rgba(42, 24, 16, 0.04);
+  --shadow-xl: 0 24px 48px -12px rgba(26, 13, 8, 0.35);
+
+  /* ---- Motion ---- */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --duration-fast: 150ms;
+  --duration: 250ms;
+  --duration-slow: 400ms;
+
+  /* ---- Layout ---- */
+  --header-h: 104px;     /* updated at runtime by header.js */
+  --z-header: 50;
+  --z-overlay: 80;
+  --z-toast: 90;
+}

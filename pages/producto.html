@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Producto · Compro Café de Colombia</title>
+  <meta name="description" content="Detalle del café: origen, tostión, perfil de sabor, presentación y compra directa.">
+  <meta name="theme-color" content="#2a1810">
+  <link rel="icon" href="../assets/icons/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap">
+
+  <link rel="stylesheet" href="../css/tokens.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/sections.css">
+  <link rel="stylesheet" href="../css/pages.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+
+  <script src="../js/core/boot.js"></script>
+</head>
+<body data-page="product" data-root="..">
+  <div data-component="header"></div>
+
+  <main id="main" class="page-main">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Ruta de navegación">
+        <ol>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="../index.html#catalogo">Catálogo</a></li>
+          <li aria-current="page" data-breadcrumb-current>Producto</li>
+        </ol>
+      </nav>
+
+      <!-- Filled by js/pages/product.js from productService.getProductById(id) -->
+      <div data-product-detail aria-live="polite">
+        <div class="product-skeleton" aria-hidden="true">
+          <div class="product-skeleton__media"></div>
+          <div class="product-skeleton__info">
+            <span></span><span></span><span></span><span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="section section--alt related" aria-labelledby="related-title" data-related hidden>
+      <div class="container">
+        <header class="section-head section-head--split">
+          <div>
+            <p class="eyebrow">También te puede gustar</p>
+            <h2 class="section-head__title section-head__title--primary" id="related-title">Cafés con un perfil similar</h2>
+          </div>
+          <a class="link-arrow" href="../index.html#catalogo">
+            <span>Ver todo el catálogo</span>
+            <svg class="icon" aria-hidden="true"><use href="#i-arrow-forward"></use></svg>
+          </a>
+        </header>
+        <div class="product-grid product-grid--related" data-related-grid></div>
+      </div>
+    </section>
+  </main>
+
+  <div data-component="footer"></div>
+
+  <script src="../js/core/config.js" defer></script>
+  <script src="../js/core/utils.js" defer></script>
+  <script src="../js/core/icons.js" defer></script>
+  <script src="../js/data/products.js" defer></script>
+  <script src="../js/data/content.js" defer></script>
+  <script src="../js/services/product-service.js" defer></script>
+  <script src="../js/services/search.js" defer></script>
+  <script src="../js/services/filters.js" defer></script>
+  <script src="../js/services/cart-service.js" defer></script>
+  <script src="../js/components/ui.js" defer></script>
+  <script src="../js/components/product-card.js" defer></script>
+  <script src="../js/components/layout.js" defer></script>
+  <script src="../js/components/cart-drawer.js" defer></script>
+  <script src="../js/pages/product.js" defer></script>
+  <script src="../js/app.js" defer></script>
+</body>
+</html>
